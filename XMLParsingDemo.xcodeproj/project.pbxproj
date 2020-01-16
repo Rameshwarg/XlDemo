@@ -13,6 +13,10 @@
 		08069C98238D4F39001B7C9E /* XMLParsingDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08069C96238D4F39001B7C9E /* XMLParsingDemo.xcdatamodeld */; };
 		08069C9A238D4F3B001B7C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08069C99238D4F3B001B7C9E /* Assets.xcassets */; };
 		08069C9D238D4F3B001B7C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08069C9B238D4F3B001B7C9E /* LaunchScreen.storyboard */; };
+		339060A32393D1F100B88372 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339060A22393D1F100B88372 /* APICall.swift */; };
+		339060A52393D42C00B88372 /* DataBaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339060A42393D42C00B88372 /* DataBaseOperation.swift */; };
+		339060A72393DF1600B88372 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339060A62393DF1600B88372 /* NewsTableViewCell.swift */; };
+		339060A92393E54200B88372 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339060A82393E54200B88372 /* HelperExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		08069C99238D4F3B001B7C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08069C9C238D4F3B001B7C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08069C9E238D4F3B001B7C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339060A22393D1F100B88372 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		339060A42393D42C00B88372 /* DataBaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseOperation.swift; sourceTree = "<group>"; };
+		339060A62393DF1600B88372 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		339060A82393E54200B88372 /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 		08069C8E238D4F39001B7C9E /* XMLParsingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				339060A12393D19A00B88372 /* DataBase */,
+				339060A02393D18100B88372 /* ServerConnection */,
 				08069C8F238D4F39001B7C9E /* AppDelegate.swift */,
 				08069C91238D4F39001B7C9E /* ViewController.swift */,
+				339060A82393E54200B88372 /* HelperExtensions.swift */,
+				339060A62393DF1600B88372 /* NewsTableViewCell.swift */,
 				08069C93238D4F39001B7C9E /* Main.storyboard */,
 				08069C99238D4F3B001B7C9E /* Assets.xcassets */,
 				08069C9B238D4F3B001B7C9E /* LaunchScreen.storyboard */,
@@ -65,6 +77,22 @@
 				08069C96238D4F39001B7C9E /* XMLParsingDemo.xcdatamodeld */,
 			);
 			path = XMLParsingDemo;
+			sourceTree = "<group>";
+		};
+		339060A02393D18100B88372 /* ServerConnection */ = {
+			isa = PBXGroup;
+			children = (
+				339060A22393D1F100B88372 /* APICall.swift */,
+			);
+			path = ServerConnection;
+			sourceTree = "<group>";
+		};
+		339060A12393D19A00B88372 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				339060A42393D42C00B88372 /* DataBaseOperation.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339060A92393E54200B88372 /* HelperExtensions.swift in Sources */,
 				08069C92238D4F39001B7C9E /* ViewController.swift in Sources */,
+				339060A52393D42C00B88372 /* DataBaseOperation.swift in Sources */,
+				339060A72393DF1600B88372 /* NewsTableViewCell.swift in Sources */,
 				08069C98238D4F39001B7C9E /* XMLParsingDemo.xcdatamodeld in Sources */,
+				339060A32393D1F100B88372 /* APICall.swift in Sources */,
 				08069C90238D4F39001B7C9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
